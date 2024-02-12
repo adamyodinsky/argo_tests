@@ -32,5 +32,10 @@ spec:
         # valueFiles:
         #   - values.yaml
       destination:
-        server: "https://kubernetes.default.svc"
-        namespace: default
+        server: https://kubernetes.default.svc
+        namespace: "default"
+      syncPolicy:
+        automated:
+          allowEmpty: true
+          prune: true
+          selfHeal: true

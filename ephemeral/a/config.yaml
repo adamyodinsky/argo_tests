@@ -2,6 +2,6 @@ services:
   - name: bar
     valuesObject: |
       override_name: foo
-  - name: hello-world-b
-      nameOverride: hello-world-b
-      fullnameOverride: hello-world-b
+  - name: bazz
+    valuesObject: |
+      override_name: gooz

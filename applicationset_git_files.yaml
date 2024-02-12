@@ -29,7 +29,7 @@ spec:
         helm:
           releaseName: "{{.name}}"
           values: "{{ .values }}"
-        valuesObject: "{{ .valuesObject }}"
+          valuesObject: {{ .valuesObject }}
         # valueFiles:
         #   - values.yaml
       destination:

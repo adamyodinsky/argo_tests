@@ -1,4 +1,4 @@
-elements:
+services:
   - name: hello-world-a
     # valuesObject:
     #   service:

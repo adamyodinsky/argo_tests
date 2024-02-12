@@ -13,7 +13,7 @@ spec:
               repoURL: https://github.com/adamyodinsky/argo_tests.git
               revision: HEAD
               files:
-                - path: "ephemeral/**/config.yaml"
+                - path: "ephemeral/a/config.yaml"
           - list:
               elements: []
               elementsYaml: "{{ .services | toJson }}"
@@ -23,13 +23,12 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/helm/examples.git
+        repoURL: https://github.com/adamyodinsky/argo_tests.git
         targetRevision: HEAD
-        path: charts/hello-world
+        path: charts/hello-world-b
         helm:
           releaseName: "{{.name}}"
-          values: |
-            "{{ .valuesObject }}"
+          values: "{{ .valuesObject }}"
         # valueFiles:
         #   - values.yaml
       destination:

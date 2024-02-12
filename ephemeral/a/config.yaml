@@ -1,8 +1,7 @@
 services:
   - name: hello-world-a
     valuesObject: |
-      nameOverride: hello-world-a
-      fullnameOverride: hello-world-a
+      name: hello-world-a
   # - name: hello-world-b
   #   valuesObject:
   #     nameOverride: hello-world-b

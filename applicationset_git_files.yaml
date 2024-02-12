@@ -19,10 +19,13 @@ spec:
       project: default
       source:
         chart: hello-world
-        repoURL: https://github.com/adamyodinsky/alfa_test.git/charts/hello-world-a
-        targetRevision: 0.1.0
+        repoURL: https://github.com/adamyodinsky/argo_tests
+        targetRevision: HEAD
+        path: charts/hello-world-a
         helm:
-          releaseName: hello-world
+          releaseName: hello-world-1
+          # valueFiles:
+          #   - values.yaml
       destination:
         server: "https://kubernetes.default.svc"
         namespace: default

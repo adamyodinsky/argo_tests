@@ -28,6 +28,7 @@ spec:
         path: charts/hello-world
         helm:
           releaseName: "{{.name}}"
+          valuesObject: { { .valuesObject | toYaml | nindent 12 } }
         # valueFiles:
         #   - values.yaml
       destination:

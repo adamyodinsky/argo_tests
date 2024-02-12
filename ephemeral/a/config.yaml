@@ -9,4 +9,3 @@ services:
       service:
         type: ClusterIP
         port: 8000
-# name: hello-world-a

@@ -1,4 +1,6 @@
 services:
   - name: tel-aviv
-    valuesObject: |
+    values: |
       override_name: haifa
+    valuesObject:
+      replicas: 2

@@ -1,7 +1,7 @@
 services:
   - name: bar
-    valuesObject: |
+    values: |
       override_name: foo
   - name: bazz
-    valuesObject: |
+    values: |
       override_name: gooz

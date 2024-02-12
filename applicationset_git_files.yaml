@@ -28,7 +28,8 @@ spec:
         path: charts/hello-world-b
         helm:
           releaseName: "{{.name}}"
-          values: "{{ .valuesObject }}"
+          values: "{{ .values }}"
+        valuesObject: "{{ .valuesObject }}"
         # valueFiles:
         #   - values.yaml
       destination:

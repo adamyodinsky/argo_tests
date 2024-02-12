@@ -15,7 +15,7 @@ spec:
               files:
                 - path: "ephemeral/a/config.yaml"
           - list:
-              elementsYaml: "{{ .key.components | toJson }}"
+              elementsYaml: "{{ .elements | toJson }}"
   template:
     metadata:
       name: "{{.name}}"

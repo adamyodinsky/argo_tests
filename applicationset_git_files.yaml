@@ -7,13 +7,15 @@ spec:
   goTemplate: true
   goTemplateOptions: ["missingkey=error"]
   generators:
-    - git:
-        repoURL: https://github.com/adamyodinsky/argo_tests.git
-        revision: HEAD
-        files:
-          - path: "ephemeral/a/config.yaml"
-    - list:
-        elementsYaml: "{{ .services | toJson }}"
+    - matrix:
+      generators:
+        - git:
+            repoURL: https://github.com/adamyodinsky/argo_tests.git
+            revision: HEAD
+            files:
+              - path: "ephemeral/a/config.yaml"
+        - list:
+            elementsYaml: "{{ .key.components | toJson }}"
   template:
     metadata:
       name: "{{.name}}"

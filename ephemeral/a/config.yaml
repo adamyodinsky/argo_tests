@@ -1,5 +1,5 @@
 services:
-  - name: foo
+  - name: bar
     valuesObject: |
       name: foo
     # valuesObject:

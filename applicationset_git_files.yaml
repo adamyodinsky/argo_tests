@@ -23,12 +23,13 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/helm/charts.git
+        repoURL: https://github.com/helm/examples.git
         targetRevision: HEAD
         path: charts/hello-world
         helm:
           releaseName: "{{.name}}"
-          valuesObject: { { .valuesObject | toYaml | nindent 12 } }
+          values: |
+            "{{ .valuesObject }}"
         # valueFiles:
         #   - values.yaml
       destination:

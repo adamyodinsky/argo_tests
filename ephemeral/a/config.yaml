@@ -1,5 +1,5 @@
 key:
-  components:
+  elements:
     - name: hello-world-a
       # valuesObject:
       #   service:

@@ -12,9 +12,11 @@ spec:
         revision: HEAD
         files:
           - path: "ephemeral/a/config.yaml"
+    - list:
+        elementsYaml: "{{ .services | toJson }}"
   template:
     metadata:
-      name: "{{.services.name}}"
+      name: "{{.name}}"
     spec:
       project: default
       source:

@@ -13,3 +13,9 @@ ApplicationSet:
 
 https://argocd-applicationset.readthedocs.io/en/stable/Generators-Git/#git-generator-files
 https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Git/#git-generator-files
+
+https://argo-cd.readthedocs.io/en/stable/user-guide/helm/#helm-value-precedence
+
+## Hot to create a list generator from elements in a yaml/json file
+
+https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-List/#dynamically-generated-elements

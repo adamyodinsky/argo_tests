@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: ephemeral-test-1
+  name: ephemeral-test
   namespace: argocd
 spec:
   goTemplate: true
@@ -22,7 +22,7 @@ spec:
     spec:
       project: default
       source:
-        chart: hello-world
+        chart: hello-world-a
         repoURL: https://github.com/adamyodinsky/argo_tests.git
         targetRevision: HEAD
         path: /charts/hello-world-a

@@ -23,9 +23,9 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/helm/examples.git
+        repoURL: https://github.com/helm/charts.git
         targetRevision: HEAD
-        path: charts/hello-world
+        path: stable/nginx-ingress
         helm:
           releaseName: "{{.name}}"
         # valueFiles:

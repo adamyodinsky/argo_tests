@@ -4,6 +4,6 @@ services:
       nameOverride: hello-world-c
       fullnameOverride: hello-world-c
   - name: hello-world-d
-      valuesObject:
-        nameOverride: hello-world-d
-        fullnameOverride: hello-world-d
+    valuesObject:
+      nameOverride: hello-world-d
+      fullnameOverride: hello-world-d

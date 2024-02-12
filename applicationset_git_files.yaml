@@ -13,7 +13,7 @@ spec:
               repoURL: https://github.com/adamyodinsky/argo_tests.git
               revision: HEAD
               files:
-                - path: "ephemeral/a/config.yaml"
+                - path: "ephemeral/**/config.yaml"
           - list:
               elements: []
               elementsYaml: "{{ .services | toJson }}"

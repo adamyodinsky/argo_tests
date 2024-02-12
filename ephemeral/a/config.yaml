@@ -5,8 +5,5 @@ services:
       fullnameOverride: hello-world-a
   - name: hello-world-b
     valuesObject:
-      valuesObject:
-        nameOverride: hello-world-b
-        fullnameOverride: hello-world-b
-      serviceAccount:
-        create: false
+      nameOverride: hello-world-b
+      fullnameOverride: hello-world-b

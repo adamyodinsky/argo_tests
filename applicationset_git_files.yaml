@@ -8,7 +8,7 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
     - git:
-        repoURL: https://github.com/adamyodinsky/alfa_test.git
+        repoURL: https://github.com/adamyodinsky/argo_tests.git
         revision: HEAD
         files:
           - path: "ephemeral/a/config.yaml"
@@ -19,11 +19,11 @@ spec:
       project: default
       source:
         chart: hello-world
-        repoURL: https://github.com/adamyodinsky/argo_tests
+        repoURL: https://github.com/adamyodinsky/argo_tests.git
         targetRevision: HEAD
-        path: charts/hello-world-a
+        path: /charts/hello-world-a
         helm:
-          releaseName: hello-world-1
+          releaseName: hello-world
           # valueFiles:
           #   - values.yaml
       destination:

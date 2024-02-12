@@ -1,11 +1,17 @@
-services:
-  - name: hello-world-a
-    valuesObject:
-      service:
-        type: ClusterIP
-        port: 9000
-  - name: hello-world-b
-    valuesObject:
-      service:
-        type: ClusterIP
-        port: 8000
+# services:
+#   - name: hello-world-a
+#     valuesObject:
+#       service:
+#         type: ClusterIP
+#         port: 9000
+#   - name: hello-world-b
+#     valuesObject:
+#       service:
+#         type: ClusterIP
+#         port: 8000
+
+name: hello-world-a
+valuesObject:
+service:
+type: ClusterIP
+port: 9000

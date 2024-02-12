@@ -20,7 +20,7 @@ spec:
       source:
         chart: hello-world
         repoURL: https://github.com/adamyodinsky/alfa_test.git/charts/hello-world-a
-        targetRevision: HEAD
+        targetRevision: 0.1.0
         helm:
           releaseName: hello-world
       destination:

@@ -1,0 +1,32 @@
+# Iterate via a file with paths to the applicationset files
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: gitopsdemo
+  namespace: argocd
+spec:
+  generators:
+    - git:
+      repoURL: https://github.com/adamyodinsky/ephemeralenvironments.git
+      revision: HEAD
+      files:
+        - path: "alfa_test/"
+  template:
+    metadata:
+      name: "{{path.basename}}"
+    spec:
+      project: default
+      source:
+        chart: hello-world
+        repoURL: https://github.com/helm/examples/tree/main/charts/hello-world
+        targetRevision: 1.16.0
+        helm:
+          releaseName: hello-world
+      destination:
+        server: https://kubernetes.default.svc
+        # namespace: '{{path.basename}}'
+      syncPolicy:
+        automated:
+          allowEmpty: true
+          prune: true
+          selfHeal: true

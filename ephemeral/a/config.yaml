@@ -1,0 +1,11 @@
+services:
+  - name: hello_world_a
+    valuesObject:
+      service:
+        type: ClusterIP
+        port: 9000
+  - name: hello_world_b
+    valuesObject:
+      service:
+        type: ClusterIP
+        port: 8000

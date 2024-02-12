@@ -1,8 +1,7 @@
 services:
   - name: bar
     valuesObject: |
-      name: foo
-    # valuesObject:
-  # - name: hello-world-b
-  #     nameOverride: hello-world-b
-  #     fullnameOverride: hello-world-b
+      override_name: foo
+  - name: hello-world-b
+      nameOverride: hello-world-b
+      fullnameOverride: hello-world-b

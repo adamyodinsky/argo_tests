@@ -1,15 +1,9 @@
 services:
   - name: hello-world-c
     valuesObject:
-      service:
-        type: ClusterIP
-        port: 9090
-      serviceAccount:
-        create: false
+      valuesObject:
+        nameOverride: hello-world-c
   - name: hello-world-d
     valuesObject:
-      service:
-        type: ClusterIP
-        port: 8080
-      serviceAccount:
-        create: false
+      valuesObject:
+        nameOverride: hello-world-d

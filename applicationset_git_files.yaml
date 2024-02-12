@@ -23,9 +23,9 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/helm/charts.git
+        repoURL: https://github.com/bitnami/charts.git
         targetRevision: HEAD
-        path: stable/nginx-ingress
+        path: bitnami/nginx
         helm:
           releaseName: "{{.name}}"
         # valueFiles:

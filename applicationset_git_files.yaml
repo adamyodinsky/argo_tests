@@ -11,7 +11,7 @@ spec:
         repoURL: https://github.com/adamyodinsky/alfa_test.git
         revision: HEAD
         files:
-          - path: "ephemeral/**/config.yaml"
+          - path: "ephemeral/a/config.yaml"
   template:
     metadata:
       name: "{{.services.name}}"
@@ -19,8 +19,8 @@ spec:
       project: default
       source:
         chart: hello-world
-        repoURL: https://github.com/adamyodinsky/alfa_test.git/charts/hello_world_a
-        targetRevision: 1.16.0
+        repoURL: https://github.com/adamyodinsky/alfa_test.git/charts/hello-world-a
+        targetRevision: 0.1.0
         helm:
           releaseName: hello-world
       destination:

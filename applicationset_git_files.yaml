@@ -16,7 +16,7 @@ spec:
                 - path: "ephemeral/a/config.yaml"
           - list:
               elements: []
-              elementsYaml: "{{ .elements | toJson }}"
+              elementsYaml: "{{ .services | toJson }}"
   template:
     metadata:
       name: "{{.name}}"
@@ -24,11 +24,11 @@ spec:
       project: default
       source:
         chart: hello-world-a
-        repoURL: https://github.com/adamyodinsky/argo_tests.git
+        repoURL: https://github.com/helm/examples.git #https://github.com/adamyodinsky/argo_tests.git
         targetRevision: HEAD
-        path: /charts/hello-world-a
+        path: charts/hello-world
         helm:
-          releaseName: hello-world
+          releaseName: "{{.name}}"
           # valueFiles:
           #   - values.yaml
       destination:

@@ -2,6 +2,6 @@ services:
   - name: bar
     values: |
       override_name: foo
-  - name: bazz
-    values: |
-      override_name: gooz
+  # - name: bazz
+  #   values: |
+  #     override_name: gooz

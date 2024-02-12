@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: ephemeral-test
+  name: ephemeral-test-1
   namespace: argocd
 spec:
   goTemplate: true

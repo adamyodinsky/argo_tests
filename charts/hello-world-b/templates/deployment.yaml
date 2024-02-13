@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.override_name }}
+  name: "{{ .Values.override_name }}"
   labels:
-    app: {{ .Values.override_name }}
+    app: "{{ .Values.override_name }}"
 spec:
-  replicas: {{ .Values.replicas }}
+  replicas: "{{ .Values.replicas }}"
   selector:
     matchLabels:
-      app: {{ .Values.override_name }}
+      app: "{{ .Values.override_name }}"
   template:
     metadata:
       labels:
-        app: {{ .Values.override_name }}
+        app: "{{ .Values.override_name }}"
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: nginx:1.14.2
+          ports:
+            - containerPort: 80

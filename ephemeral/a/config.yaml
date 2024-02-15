@@ -2,6 +2,8 @@ services:
   - name: bar
     values: |
       override_name: foo
+    valuesObject: {replicas: 2}
   - name: bazz
     values: |
       override_name: gooz
+    valuesObject: {replicas: 2}

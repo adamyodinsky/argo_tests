@@ -2,4 +2,8 @@ services:
   - name: tel-aviv
     values: |
       override_name: haifa
-    valuesObject: { replicas: 2 }
+    valuesObject: {replicas: 2}
+  - name: talmond
+    values: |
+      override_name: talmond-baaaa
+    valuesObject: {replicas: 2}

@@ -30,7 +30,7 @@ spec:
           releaseName: "{{.name}}"
           values: "{{ .values }}"
           # TODO: Add support for valuesObject if possible
-          #          valuesObject: {{ .valuesObject }}
+          valuesObject: {{.valuesObject}}
           # TODO: Add support for valueFiles
           # Interpolate service name from the config file to the path of the values file
           valueFiles:

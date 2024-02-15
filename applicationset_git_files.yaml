@@ -21,7 +21,7 @@ spec:
     metadata:
       name: "{{.name}}"
     spec:
-      project: default
+      project: "{{.name}}"
       source:
         repoURL: https://github.com/adamyodinsky/argo_tests.git
         targetRevision: HEAD

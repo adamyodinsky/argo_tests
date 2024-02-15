@@ -29,9 +29,12 @@ spec:
         helm:
           releaseName: "{{.name}}"
           values: "{{ .values }}"
-#          valuesObject: {{ .valuesObject }}
-        # valueFiles:
-        #   - values.yaml
+          # TODO: Add support for valuesObject if possible
+          #          valuesObject: {{ .valuesObject }}
+          # TODO: Add support for valueFiles
+          # Interpolate service name from the config file to the path of the values file
+          valueFiles:
+            - "values.yaml"
       destination:
         server: https://kubernetes.default.svc
         namespace: "default"

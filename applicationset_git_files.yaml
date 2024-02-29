@@ -19,7 +19,7 @@ spec:
               elementsYaml: "{{ .services | toJson }}"
   template:
     metadata:
-      name: "{{.name}}"
+      name: "{{ .name }}"
     spec:
       project: default
       source:

@@ -19,3 +19,10 @@ https://argo-cd.readthedocs.io/en/stable/user-guide/helm/#helm-value-precedence
 ## Hot to create a list generator from elements in a yaml/json file
 
 https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-List/#dynamically-generated-elements
+
+## Value files path can be full git path or relative
+
+Sources:
+
+- https://argo-cd.readthedocs.io/en/stable/user-guide/helm/#values-files
+- https://argo-cd.readthedocs.io/en/stable/user-guide/multiple_sources/#helm-value-files-from-external-git-repository
